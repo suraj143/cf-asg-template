@@ -27,7 +27,7 @@
    ```sh
    ./deploy_asg.sh -h
    ```
-5. For Github Actions Automated pipeline check for .github/workflows/deploy.yml
+5. #### Optional: For Github Actions Automated pipeline check for .github/workflows/deploy.yml
    mv deploy.yaml .github/workflows/deploy.yml
   . store below values in secret variables 
   a. secrets.AWS_ACCESS_KEY_ID 
