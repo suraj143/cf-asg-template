@@ -24,6 +24,7 @@
 1. Clone the repository:
    ```bash
    aws configure
+   aws sts get-caller-identity #Verify user credentials
    git clone https://github.com/yourusername/cf-asg-template.git
    cd cf-asg-template
    ```
