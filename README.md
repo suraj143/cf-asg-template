@@ -1,6 +1,25 @@
 # cf-asg-template
 ## Prerequisites:
 - [AWS CLI](https://aws.amazon.com/cli/) installed and configured with appropriate IAM permissions (`cloudformation:CreateStack`, `ec2:RunInstances`, `autoscaling:CreateAutoScalingGroup`).
+- Select IAM -> Policies from the left-hand menu and click Create policy
+```sh
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Action": [
+        "cloudformation:CreateStack",
+        "ec2:RunInstances",
+        "autoscaling:CreateAutoScalingGroup"
+      ],
+      "Resource": "*"
+    }
+  ]
+}
+```
+- Attach policy to user and create security_credentials --> Access keys 
+
 ## Setup:
 1. Clone the repository:
    ```bash
